@@ -31,7 +31,7 @@ Bu sistem, bir iç iletişim aracı, bir müşteri destek platformunun temeli ve
 * **Kullanıcı Listesi:** Mesaj gönderilebilecek diğer kayıtlı kullanıcıların listelenmesi.
 
 ### Teknik Altyapı
-* **Veritabanı Modeli:** Kullanıcılar (`Users`) ve Mesajlar (`Messages`) gibi temel tablolar arasındaki ilişkilerin yönetimi.
+* **Veritabanı Modeli:** Kullanıcılar (`Kisiler`) ve Mesajlar (`Mesajlar`) gibi temel tablolar arasındaki ilişkilerin yönetimi.
 * **Geliştirme Teknolojisi:** Proje, **C#** dili ve **.NET** teknolojileri (örneğin ASP.NET Core veya WinForms/WPF) kullanılarak geliştirilmiştir.
 
 ---
@@ -48,7 +48,7 @@ Bu projenin çalıştırılması için gerekli **.NET ortamı** ve **SQL Server*
 
 2.  **Veritabanı Kurulumu:**
     * **SQL Server**'da bir veritabanı oluşturun.
-    * Veritabanı şemasını (tabloları) oluşturmak için projenin **data access** katmanındaki (genellikle Entity Framework Migrations) talimatları uygulayın.
+    * Veritabanı şemasını (tabloları) manuel olarak oluşturabilirsiniz.
 
 3.  **Bağlantı Dizesini Ayarlama:**
     * Projenin yapılandırma dosyasındaki (`Web.config` veya `appsettings.json`) **veritabanı bağlantı dizesini** kendi yerel SQL Server ayarlarınıza göre güncelleyin.
@@ -88,7 +88,7 @@ This system can serve as an internal communication tool, the foundation for a cu
 * **User List:** Listing of other registered users available to send messages to.
 
 ### Technical Foundation
-* **Database Model:** Management of relationships between core tables like `Users` and `Messages`.
+* **Database Model:** Management of relationships between core tables like `Kisiler` and `Mesajlar`.
 * **Development Technology:** The project is developed using the **C#** language and **.NET** technologies (e.g., ASP.NET Core or WinForms/WPF).
 
 ---
@@ -105,7 +105,7 @@ Running this project requires the necessary **.NET environment** and **SQL Serve
 
 2.  **Database Setup:**
     * Create a new database in **SQL Server**.
-    * Follow the instructions in the project's **data access** layer (typically Entity Framework Migrations) to set up the database schema (tables).
+    * You may create the relevant tables manually.
 
 3.  **Configuring the Connection String:**
     * Update the **database connection string** in the project's configuration file (`Web.config` or `appsettings.json`) to match your local SQL Server settings.
